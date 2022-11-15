@@ -11,3 +11,9 @@ def page1(request):
 
 def page2(request):
     return HttpResponse('Page 2 posted now from django')
+
+def renderpage(request):
+    return render(request, 'index.html')
+
+def bluepage(request):
+    return render(request, 'bluepage.html')
