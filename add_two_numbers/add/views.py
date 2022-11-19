@@ -9,4 +9,12 @@ def home(request):
 
 
 def add(request):
-    return render(request, 'index.html')
+    number_1 = int(request.GET["num_1"])
+    number_2 = int(request.GET["num_2"])
+    total = number_1 + number_2
+    return render(request, ('index.html'), {'total' : total})
+
+def result(request):
+    return render(request, ('result.html'))
+
+
