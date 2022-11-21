@@ -7,4 +7,15 @@ def home(request):
     return HttpResponse('Hello Jinja')
 
 def jinja(request):
-    return render(request, 'index.html')
+    cars = ['maruthi', 
+            'honda',
+            'tata',
+            'skoda']
+    
+    rang = []
+    for i in range(10):
+        rang.append(i)
+
+    
+
+    return render(request, 'index.html', {'cars': cars, 'rang' : rang})
