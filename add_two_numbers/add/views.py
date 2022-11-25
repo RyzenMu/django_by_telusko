@@ -5,7 +5,10 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse('Hello World')
+    return HttpResponse('Hello World fromm adiition of two numbers')
+
+def addition(request):
+    return render(request, 'index.html')
 
 
 def add(request):
