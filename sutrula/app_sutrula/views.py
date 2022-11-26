@@ -8,3 +8,6 @@ def home_page(request):
 
 def makemytrip(request):
     return render(request, 'makemytrip.html')
+
+def kaveri(request):
+    return render(request, 'home_page.html')
