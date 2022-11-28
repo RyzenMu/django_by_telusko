@@ -137,63 +137,8 @@
 		<div class="fh5co-listing">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
-						<a class="fh5co-listing-item">
-							<img src="{% static 'images/img-1.jpg' %}" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
-							<div class="fh5co-listing-copy">
-								<h2>Paris</h2>
-								<span class="icon">
-									<i class="icon-chevron-right"></i>
-								</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
-						<a class="fh5co-listing-item">
-							<img src="{% static 'images/img-2.jpg' %}" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
-							<div class="fh5co-listing-copy">
-								<h2>New York</h2>
-								<span class="icon">
-									<i class="icon-chevron-right"></i>
-								</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
-						<a class="fh5co-listing-item">
-							<img src="{% static 'images/img-3.jpg' %}" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
-							<div class="fh5co-listing-copy">
-								<h2>London</h2>
-								<span class="icon">
-									<i class="icon-chevron-right"></i>
-								</span>
-							</div>
-						</a>
-					</div>
-					<!-- END 3 row -->
 
-					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
-						<a class="fh5co-listing-item">
-							<img src="{% static 'images/img-4.jpg' %}" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
-							<div class="fh5co-listing-copy">
-								<h2>Amsterdam</h2>
-								<span class="icon">
-									<i class="icon-chevron-right"></i>
-								</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
-						<a class="fh5co-listing-item">
-							<img src="{% static 'images/img-5.jpg' %}" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
-							<div class="fh5co-listing-copy">
-								<h2>Australia</h2>
-								<span class="icon">
-									<i class="icon-chevron-right"></i>
-								</span>
-							</div>
-						</a>
-					</div>
+					{% for location in locations %}
 					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
 						<a class="fh5co-listing-item">
 							<img src="{% static 'images/img-6.jpg' %}" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
@@ -205,6 +150,7 @@
 							</div>
 						</a>
 					</div>
+					{% endfor %}
 					<!-- END 3 row -->
 
 
