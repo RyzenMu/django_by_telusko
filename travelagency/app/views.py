@@ -14,11 +14,12 @@ def home(request):
 
     dest2 = Destinations()
     dest2.name = 'Goa'
-    dest2.price = 800
+    dest2.price = 8000000000000
 
 
     # return render(request, 'index.html', {'location_1': loaction_1, 'location_2' : location_2,
     # 'price_1' : 700, 'price_2' : 800})
+    return render(request, 'index.html', {'dest2' : dest2})
 
 def forloop(request):
     names = ['apple', 'banana', 'carrot']
