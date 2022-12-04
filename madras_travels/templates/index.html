@@ -1,0 +1,17 @@
+{% load static %} 
+{% static "images" as baseUrl %}
+{% for dest in dests %}
+    <h2>Name : {{dest.name}}</h2>
+    <h4>Price : {{dest.price}}</h4>
+    <br>
+    <img src="{{baseUrl}}/{{dest.image}}" width='400px' alt="">
+
+
+    {% if dest.name == "Delhi" %}
+        SPECIAL OFFER !!!!
+    {% endif %}
+    
+
+
+
+{% endfor %}
