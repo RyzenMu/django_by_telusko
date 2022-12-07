@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dynamic_page',
+    'dynamic_page.apps.dynamic_pageConfig',
 ]
 
 MIDDLEWARE = [
@@ -82,7 +82,8 @@ DATABASES = {
         'NAME': 'dynamic_page',
         'USER' : 'postgres',
         'PASSWORD' : '5432',
-        'HOST' : 'localhost'
+        'HOST' : 'localhost',
+        'PORT' : '5432'
     }
 }
 
