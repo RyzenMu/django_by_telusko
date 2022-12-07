@@ -7,4 +7,4 @@ class Destinations(models.Model):
     price = models.IntegerField
     image = models.ImageField(upload_to='pics')
     desc = models.TextField()
-    boole = models.BooleanField(default=False)
+    offer = models.BooleanField(default=False)
