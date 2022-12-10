@@ -8,3 +8,5 @@ class Bikes(models.Model):
     price = models.IntegerField()
     description = models.TextField()
     cooling = models.CharField(max_length=100)
+    disc = models.BooleanField(default=False)
+    image = models.ImageField(upload_to='pics')
