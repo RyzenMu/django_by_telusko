@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dynamic_page.apps.dynamic_pageConfig',
+    'app',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'dynamic_page.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dynamic_page',
+        'NAME': 'database_1',
         'USER' : 'postgres',
         'PASSWORD' : '5432',
         'HOST' : 'localhost',
